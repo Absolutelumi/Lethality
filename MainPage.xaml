@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lethality.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <HorizontalStackLayout>
+            <!--region PRIMARY TREE-->
+            <VerticalStackLayout 
+                Spacing="15" 
+                Padding="30,0" 
+                VerticalOptions="Start">
+
+                <!--#region RUNE TYPES-->
+                <HorizontalStackLayout
+                Spacing="25">
+
+                    <Image
+                    x:Name="RuneImage"
+                    Style="{StaticResource RuneImageStyle}" />
+
+                    <ImageButton
+                    x:Name="PrecisionButton"
+                    Style="{StaticResource RuneCategoryStyle}"
+                    Clicked="OnRuneCategoryClick" />
+
+                    <ImageButton
+                    x:Name="DominationButton"
+                    Style="{StaticResource RuneCategoryStyle}"
+                    Clicked="OnRuneCategoryClick" />
+
+                    <ImageButton
+                    x:Name="SorceryButton"
+                    Style="{StaticResource RuneCategoryStyle}"
+                    Clicked="OnRuneCategoryClick" />
+
+                    <ImageButton
+                    x:Name="ResolveButton"
+                    Style="{StaticResource RuneCategoryStyle}"
+                    Clicked="OnRuneCategoryClick" />
+
+                    <ImageButton
+                    x:Name="InspirationButton"
+                    Style="{StaticResource RuneCategoryStyle}"
+                    Clicked="OnRuneCategoryClick" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+                <!--#region KEYSTONES-->
+                <HorizontalStackLayout
+                Spacing="25">
+
+                    <ImageButton
+                        x:Name="Keystone1"
+                        Style="{StaticResource KeystoneStyle}"
+                        Clicked="OnKeystoneClick" />
+
+                    <ImageButton
+                        x:Name="Keystone2"
+                        Style="{StaticResource KeystoneStyle}"
+                        Clicked="OnKeystoneClick" />
+
+                    <ImageButton
+                        x:Name="Keystone3"
+                        Style="{StaticResource KeystoneStyle}"
+                        Clicked="OnKeystoneClick" />
+
+                    <ImageButton
+                        x:Name="Keystone4"
+                        Style="{StaticResource KeystoneStyle}"
+                        Clicked="OnKeystoneClick" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+                <!--#region RUNES SLOT 1-->
+                <HorizontalStackLayout
+                Spacing="25">
+
+                    <ImageButton
+                        x:Name="Rune1Slot1"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSlot1Click" />
+
+                    <ImageButton
+                        x:Name="Rune2Slot1"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSlot1Click" />
+
+                    <ImageButton
+                        x:Name="Rune3Slot1"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSlot1Click" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+                <!--#region RUNES SLOT 2-->
+                <HorizontalStackLayout
+                Spacing="25">
+
+                    <ImageButton
+                x:Name="Rune1Slot2"
+                Style="{StaticResource RuneStyle}"
+                Clicked="OnSlot2Click" />
+
+                    <ImageButton
+                x:Name="Rune2Slot2"
+                Style="{StaticResource RuneStyle}"
+                Clicked="OnSlot2Click" />
+
+                    <ImageButton
+                x:Name="Rune3Slot2"
+                Style="{StaticResource RuneStyle}"
+                Clicked="OnSlot2Click" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+                <!--#region RUNES SLOT 3-->
+                <HorizontalStackLayout
+                Spacing="25">
+
+                    <ImageButton
+                x:Name="Rune1Slot3"
+                Style="{StaticResource RuneStyle}"
+                Clicked="OnSlot3Click" />
+
+                    <ImageButton
+                x:Name="Rune2Slot3"
+                Style="{StaticResource RuneStyle}"
+                Clicked="OnSlot3Click" />
+
+                    <ImageButton
+                x:Name="Rune3Slot3"
+                Style="{StaticResource RuneStyle}"
+                Clicked="OnSlot3Click" />
+
+                    <ImageButton
+                x:Name="Rune4Slot3"
+                Style="{StaticResource RuneStyle}"
+                Clicked="OnSlot3Click" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+            </VerticalStackLayout>
+            <!--#endregion-->
+
+            <!--region SECONDARY TREE-->
+            <VerticalStackLayout 
+            Spacing="15" 
+            Padding="30,0" 
+            VerticalOptions="Start">
+
+                <!--#region RUNE TYPES-->
+                <HorizontalStackLayout
+                Spacing="25">
+
+                    <Image
+                    x:Name="SecondaryRuneImage"
+                    Style="{StaticResource RuneImageStyle}" />
+
+                    <ImageButton
+                    x:Name="SecondaryPrecisionButton"
+                    Style="{StaticResource RuneCategoryStyle}"
+                    Clicked="OnSecondaryRuneCategoryClick" />
+
+                    <ImageButton
+                    x:Name="SecondaryDominationButton"
+                    Style="{StaticResource RuneCategoryStyle}"
+                    Clicked="OnSecondaryRuneCategoryClick" />
+
+                    <ImageButton
+                    x:Name="SecondarySorceryButton"
+                    Style="{StaticResource RuneCategoryStyle}"
+                    Clicked="OnSecondaryRuneCategoryClick" />
+
+                    <ImageButton
+                    x:Name="SecondaryResolveButton"
+                    Style="{StaticResource RuneCategoryStyle}"
+                    Clicked="OnSecondaryRuneCategoryClick" />
+
+                    <ImageButton
+                    x:Name="SecondaryInspirationButton"
+                    Style="{StaticResource RuneCategoryStyle}"
+                    Clicked="OnSecondaryRuneCategoryClick" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+                <!--#region RUNES SLOT 1-->
+                <HorizontalStackLayout
+                Spacing="25">
+
+                    <ImageButton
+                        x:Name="SecondaryRune1Slot1"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSecondarySlot1Click" />
+
+                    <ImageButton
+                        x:Name="SecondaryRune2Slot1"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSecondarySlot1Click" />
+
+                    <ImageButton
+                        x:Name="SecondaryRune3Slot1"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSecondarySlot1Click" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+                <!--#region RUNES SLOT 2-->
+                <HorizontalStackLayout
+                Spacing="25">
+
+                    <ImageButton
+                        x:Name="SecondaryRune1Slot2"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSecondarySlot2Click" />
+
+                    <ImageButton
+                        x:Name="SecondaryRune2Slot2"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSecondarySlot2Click" />
+
+                    <ImageButton
+                        x:Name="SecondaryRune3Slot2"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSecondarySlot2Click" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+                <!--#region RUNES SLOT 3-->
+                <HorizontalStackLayout
+                Spacing="25">
+
+                    <ImageButton
+                        x:Name="SecondaryRune1Slot3"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSecondarySlot3Click" />
+
+                    <ImageButton
+                        x:Name="SecondaryRune2Slot3"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSecondarySlot3Click" />
+
+                    <ImageButton
+                        x:Name="SecondaryRune3Slot3"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSecondarySlot3Click" />
+
+                    <ImageButton
+                        x:Name="SecondaryRune4Slot3"
+                        Style="{StaticResource RuneStyle}"
+                        Clicked="OnSecondarySlot3Click" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+                <!--#region STATS SLOT 1-->
+                <HorizontalStackLayout
+                Spacing="25">
+                    <ImageButton
+                        x:Name="Stat1Slot1"
+                        Style="{StaticResource StatStyle}"
+                        Clicked="OnSlot1StatClick" />
+
+                    <ImageButton
+                        x:Name="Stat2Slot1"
+                        Style="{StaticResource StatStyle}"
+                        Clicked="OnSlot1StatClick" />
+
+                    <ImageButton
+                        x:Name="Stat3Slot1"
+                        Style="{StaticResource StatStyle}"
+                        Clicked="OnSlot1StatClick" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+                <!--#region STATS SLOT 2-->
+                <HorizontalStackLayout
+                Spacing="25">
+                    <ImageButton
+                        x:Name="Stat1Slot2"
+                        Style="{StaticResource StatStyle}"
+                        Clicked="OnSlot2StatClick" />
+
+                    <ImageButton
+                        x:Name="Stat2Slot2"
+                        Style="{StaticResource StatStyle}"
+                        Clicked="OnSlot2StatClick" />
+
+                    <ImageButton
+                        x:Name="Stat3Slot2"
+                        Style="{StaticResource StatStyle}"
+                        Clicked="OnSlot2StatClick" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+
+                <!--#region STATS SLOT 3-->
+                <HorizontalStackLayout
+                Spacing="25">
+                    <ImageButton
+                        x:Name="Stat1Slot3"
+                        Style="{StaticResource StatStyle}"
+                        Clicked="OnSlot3StatClick" />
+
+                    <ImageButton
+                        x:Name="Stat2Slot3"
+                        Style="{StaticResource StatStyle}"
+                        Clicked="OnSlot3StatClick" />
+
+                    <ImageButton
+                        x:Name="Stat3Slot3"
+                        Style="{StaticResource StatStyle}"
+                        Clicked="OnSlot3StatClick" />
+                </HorizontalStackLayout>
+                <!--#endregion-->
+                
+            </VerticalStackLayout>
+            <!--#endregion-->
+        </HorizontalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
