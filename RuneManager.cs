@@ -251,7 +251,8 @@ namespace Lethality
 
             internal bool Equals(RunePage runePage)
             {
-                if (PrimaryCategoryId.Equals(runePage.PrimaryCategoryId) &&
+                return
+                    PrimaryCategoryId.Equals(runePage.PrimaryCategoryId) &&
                     SecondaryCategoryId.Equals(runePage.SecondaryCategoryId) &&
                     Keystones.Equals(runePage.Keystones) &&
                     Slot1Runes.Equals(runePage.Slot1Runes) &&
@@ -262,8 +263,7 @@ namespace Lethality
                     SecondarySlot3Runes.Equals(runePage.SecondarySlot3Runes) &&
                     Slot1Stats.Equals(runePage.Slot1Stats) &&
                     Slot2Stats.Equals(runePage.Slot2Stats) &&
-                    Slot3Stats.Equals(runePage.Slot3Stats)) return true;
-                else return false;
+                    Slot3Stats.Equals(runePage.Slot3Stats);
             }
         }
 
@@ -280,10 +280,9 @@ namespace Lethality
 
             internal bool Equals(RuneList runeList)
             {
-                if (selected.Equals(runeList.selected) &&
-                    (images == null && runeList.images == null ||
-                    images.SequenceEqual(runeList.images))) return true;
-                else return false;
+                return selected.Equals(runeList.selected) &&
+                       (images == null && runeList.images == null ||
+                        images.SequenceEqual(runeList.images));
             }
         }
     }
